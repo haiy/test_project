@@ -1,0 +1,34 @@
+Date:2014年 5月 3日 星期六 12时49分41秒 CST Author:haiyangfu512@gmail.com
+Usage:
+    bash monitor_service.sh service_list check_interval
+
+Example:
+     1.open a termal and create a screen session
+     $screen -S test_monitor
+
+     2.then, we want to keep a program running in the first window of that session
+     Here is a test program.
+     $ echo "'echo' running!" > test_running.sh
+
+     3.now create another window in the same session,etc window 1 and  
+     each filed is separated with ';'.
+     $echo $(screen -ls | grep test_monitor | awk '{print $1}');0;test_running.sh > service_list
+
+     4. then in the window 1,execute
+     $bash monitor_service.sh service_list 1m
+
+     5.check what is happening in window 0
+
+======================
+Description:
+    This bash script is able to detect the running programs 
+    in the service_list inside a screen session and restart
+    it.
+
+    这个程序的主要功能是：
+    1.检测在service_list中的程序运行状态
+    2.如果程序不再运行，那么发送该程序的命令到指定的screen session中
+      重启该程序。
+
+
+

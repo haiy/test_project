@@ -1,0 +1,7 @@
+#!/usr/bin/bash
+src_name=$(echo $1 | cut -d . -f1)
+javac $src_name'.java' 
+if [ ! -f $src_name'.class' ];then
+    exit
+fi
+java $src_name

@@ -1,0 +1,14 @@
+#!/bin/bash
+#author:haiy
+#2014年 6月14日 星期六 15时47分42秒 CST
+echo =================
+echo git commit -a -m "$1"
+if [ ! "$1" = '' ]; then
+    git commit -a -m "$1"
+else
+    echo "Commit string empty!"
+    exit
+fi
+echo 
+echo git push origin master
+git push origin master
