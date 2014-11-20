@@ -1,0 +1,2 @@
+#!/bin/bash
+ ctags-exuberant -h [“.scala”] -R -f tags .

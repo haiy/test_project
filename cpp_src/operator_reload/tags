@@ -1,0 +1,36 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+IsSelf	test_lib.cpp	/^bool MyClass::IsSelf(MyClass& TestObject){$/;"	f	class:MyClass	signature:(MyClass& TestObject)
+IsSelf	test_lib.h	/^    bool IsSelf(MyClass& a);$/;"	p	class:MyClass	access:public	signature:(MyClass& a)
+MyClass	test_lib.h	/^    MyClass() {};$/;"	f	class:MyClass	access:public	signature:()
+MyClass	test_lib.h	/^    MyClass(int val):x(val){};$/;"	f	class:MyClass	access:public	signature:(int val)
+MyClass	test_lib.h	/^class MyClass{$/;"	c
+MyClass::IsSelf	test_lib.cpp	/^bool MyClass::IsSelf(MyClass& TestObject){$/;"	f	class:MyClass	signature:(MyClass& TestObject)
+MyClass::IsSelf	test_lib.h	/^    bool IsSelf(MyClass& a);$/;"	p	class:MyClass	access:public	signature:(MyClass& a)
+MyClass::MyClass	test_lib.h	/^    MyClass() {};$/;"	f	class:MyClass	access:public	signature:()
+MyClass::MyClass	test_lib.h	/^    MyClass(int val):x(val){};$/;"	f	class:MyClass	access:public	signature:(int val)
+MyClass::get	test_lib.h	/^    int get(){return x;};$/;"	f	class:MyClass	access:public	signature:()
+MyClass::operator +	test_lib.cpp	/^MyClass MyClass::operator+ (const MyClass& m){$/;"	f	class:MyClass	signature:(const MyClass& m)
+MyClass::operator +	test_lib.h	/^    MyClass operator + (const MyClass&);$/;"	p	class:MyClass	access:public	signature:(const MyClass&)
+MyClass::operator =	test_lib.cpp	/^MyClass& MyClass::operator = (const MyClass& para){$/;"	f	class:MyClass	signature:(const MyClass& para)
+MyClass::operator =	test_lib.h	/^    MyClass& operator = (const MyClass&);$/;"	p	class:MyClass	access:public	signature:(const MyClass&)
+MyClass::x	test_lib.h	/^    int x;$/;"	m	class:MyClass	access:public
+Tsum	test_lib.h	/^T Tsum (T a, T b){$/;"	f	signature:(T a, T b)
+function_reload_test	test_main.cpp	/^void function_reload_test(){$/;"	f	signature:()
+get	test_lib.h	/^    int get(){return x;};$/;"	f	class:MyClass	access:public	signature:()
+main	test_main.cpp	/^int main(){$/;"	f	signature:()
+operator +	test_lib.cpp	/^MyClass MyClass::operator+ (const MyClass& m){$/;"	f	class:MyClass	signature:(const MyClass& m)
+operator +	test_lib.h	/^    MyClass operator + (const MyClass&);$/;"	p	class:MyClass	access:public	signature:(const MyClass&)
+operator =	test_lib.cpp	/^MyClass& MyClass::operator = (const MyClass& para){$/;"	f	class:MyClass	signature:(const MyClass& para)
+operator =	test_lib.h	/^    MyClass& operator = (const MyClass&);$/;"	p	class:MyClass	access:public	signature:(const MyClass&)
+operator_reload_test	test_main.cpp	/^void  operator_reload_test(){$/;"	f	signature:()
+sum	test_lib.cpp	/^double sum(double a, double b){$/;"	f	signature:(double a, double b)
+sum	test_lib.cpp	/^int sum(int a, int b){$/;"	f	signature:(int a, int b)
+sum	test_lib.h	/^double sum(double a, double b);$/;"	p	signature:(double a, double b)
+sum	test_lib.h	/^int sum(int a, int b);$/;"	p	signature:(int a, int b)
+template_test	test_main.cpp	/^void template_test(){$/;"	f	signature:()
+x	test_lib.h	/^    int x;$/;"	m	class:MyClass	access:public

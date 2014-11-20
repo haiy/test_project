@@ -1,0 +1,93 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Army	war_qa.c	/^typedef struct Army$/;"	s	file:
+Legio	army.c	/^}Legio,*Legio_ptr;$/;"	t	typeref:struct:legion	file:
+Legio_ptr	army.c	/^}Legio,*Legio_ptr;$/;"	t	typeref:struct:legion	file:
+MAX	topk.c	10;"	d	file:
+MAX_PAT_SIZE	kmp.c	3;"	d	file:
+MAX_STR_SIZE	kmp.c	2;"	d	file:
+MIN	topk.c	11;"	d	file:
+Node	rescue.c	/^typedef struct Node$/;"	s	file:
+Stack	rescue.c	/^typedef struct Stack$/;"	s	file:
+StackNoe	gift.c	/^typedef struct StackNoe{$/;"	s	file:
+bit	calcu_digit.c	/^}bit,*bit_ptr;$/;"	t	typeref:struct:digit	file:
+bit_ptr	calcu_digit.c	/^}bit,*bit_ptr;$/;"	t	typeref:struct:digit	file:
+bottom	rescue.c	/^    node_ptr bottom;$/;"	m	struct:Stack	file:
+brk_stack	gift.c	/^void brk_stack(sn_ptr *top)$/;"	f
+bub_sort	topk.c	/^void bub_sort(int *input,int len)$/;"	f
+build_skyline	skyline.c	/^void build_skyline(line_ptr skyline,int *input)$/;"	f
+cal_large	calcu_digit.c	/^bit_ptr cal_large(bit_ptr *last_bit, int m)$/;"	f
+check_army	war_qa.c	/^void check_army(class_ptr a)$/;"	f
+check_stack	gift.c	/^void check_stack(sn_ptr top)$/;"	f
+class	war_qa.c	/^}class,*class_ptr;$/;"	t	typeref:struct:Army	file:
+class_num	war_qa.c	/^    int class_num;$/;"	m	struct:Army	file:
+class_ptr	war_qa.c	/^}class,*class_ptr;$/;"	t	typeref:struct:Army	file:
+cons_seq	cs.c	/^int cons_seq(int input)$/;"	f
+delete_army	army.c	/^void delete_army(Legio_ptr *army,int *rec,int a, int x)$/;"	f
+digit	calcu_digit.c	/^typedef struct digit{$/;"	s	file:
+dijkstra	rescue.c	/^int dijkstra(int *D,int *p,int *D_status,int N,int M,int start,int end)$/;"	f
+dst_cal	rescue.c	/^int dst_cal(int a,int b, int N, int M)$/;"	f
+find_MIN	rescue.c	/^int find_MIN(int *D,int *D_status,int N,int M)$/;"	f
+freq_count	topk.c	/^int * freq_count(int *input,int len)$/;"	f
+heap_sort	topk.c	/^void heap_sort(int *input,int len)$/;"	f
+high	calcu_digit.c	/^    struct digit * high;$/;"	m	struct:digit	typeref:struct:digit::digit	file:
+insert_army	army.c	/^void insert_army(Legio_ptr *army,int *rec,int a,int x)$/;"	f
+legion	army.c	/^typedef struct legion$/;"	s	file:
+line	skyline.c	/^typedef struct line$/;"	s	file:
+line	skyline.c	/^}line,*line_ptr;$/;"	t	typeref:struct:line	file:
+line_ptr	skyline.c	/^}line,*line_ptr;$/;"	t	typeref:struct:line	file:
+low	calcu_digit.c	/^    struct digit *low;$/;"	m	struct:digit	typeref:struct:digit::digit	file:
+lower	gift.c	/^    struct StackNoe * lower;$/;"	m	struct:StackNoe	typeref:struct:StackNoe::StackNoe	file:
+lower_prime	gold_bach.c	/^char * lower_prime(int R)$/;"	f
+lower_prime_1	gold_bach.c	/^char *lower_prime_1(int R)$/;"	f
+main	army.c	/^void main()$/;"	f
+main	ballgame.c	/^int main()$/;"	f
+main	cs.c	/^int main(int argc,char *argv[])$/;"	f
+main	dom.c	/^int main()$/;"	f
+main	gift.c	/^int main()$/;"	f
+main	gold_bach.c	/^int main(int argc,char *argv[])$/;"	f
+main	kmp.c	/^int main()$/;"	f
+main	poj_sum.c	/^int main()$/;"	f
+main	rescue.c	/^int main()$/;"	f
+main	skyline.c	/^void main()$/;"	f
+main	topk.c	/^int main(int argc,char *argv[])$/;"	f
+main	war_qa.c	/^int main()$/;"	f
+merge_army	army.c	/^void merge_army(Legio_ptr * army,int *rec,int a,int b)$/;"	f
+merge_sort	topk.c	/^void merge_sort(int *input,int len)$/;"	f
+minus_list	calcu_digit.c	/^bit_ptr minus_list(bit_ptr *last_bit,int m)$/;"	f
+node	rescue.c	/^}node,*node_ptr;$/;"	t	typeref:struct:Node	file:
+node_ptr	rescue.c	/^}node,*node_ptr;$/;"	t	typeref:struct:Node	file:
+num	army.c	/^    int num;$/;"	m	struct:legion	file:
+pn	army.c	/^    struct legion * pn;$/;"	m	struct:legion	typeref:struct:legion::legion	file:
+pn	skyline.c	/^	struct line * pn;$/;"	m	struct:line	typeref:struct:line::line	file:
+pop_node	rescue.c	/^int pop_node(stack_ptr s)$/;"	f
+pop_stack	gift.c	/^void pop_stack(sn_ptr * top)$/;"	f
+prev	rescue.c	/^    struct Node *prev;$/;"	m	struct:Node	typeref:struct:Node::Node	file:
+prime_check	gold_bach.c	/^char prime_check(int N)$/;"	f
+prime_check	rescue.c	/^int prime_check(int in)$/;"	f
+prinpt	topk.c	/^void prinpt(int *input,int len)$/;"	f
+print_map	rescue.c	/^void print_map(int *D,int N,int M)$/;"	f
+push_node	rescue.c	/^void push_node(stack_ptr s,int x)$/;"	f
+push_stack	gift.c	/^void push_stack(sn_ptr *top,char val)$/;"	f
+query_army	army.c	/^void query_army(Legio_ptr *army,int *rec,int a)$/;"	f
+query_insert_class	war_qa.c	/^int query_insert_class(class_ptr a,int sol,int cln)$/;"	f
+quick_sort	topk.c	/^void quick_sort(int *input,int len)$/;"	f
+rear	war_qa.c	/^    struct Army * rear;$/;"	m	struct:Army	typeref:struct:Army::Army	file:
+set_sort_fun	topk.c	/^void set_sort_fun( char * sort_name,void (**sort_func)(int *,int) )$/;"	f
+sn	gift.c	/^}sn,*sn_ptr;$/;"	t	typeref:struct:StackNoe	file:
+sn_ptr	gift.c	/^}sn,*sn_ptr;$/;"	t	typeref:struct:StackNoe	file:
+solider	war_qa.c	/^    int solider;$/;"	m	struct:Army	file:
+stack	rescue.c	/^}stack,*stack_ptr;$/;"	t	typeref:struct:Stack	file:
+stack_ptr	rescue.c	/^}stack,*stack_ptr;$/;"	t	typeref:struct:Stack	file:
+sum	cs.c	/^int sum(int split)$/;"	f
+sum_count	gold_bach.c	/^int sum_count(char *res,int R)$/;"	f
+top	rescue.c	/^    node_ptr top;$/;"	m	struct:Stack	file:
+val	calcu_digit.c	/^    int val;$/;"	m	struct:digit	file:
+val	gift.c	/^    char val;$/;"	m	struct:StackNoe	file:
+val	rescue.c	/^    int val;$/;"	m	struct:Node	file:
+x_val	skyline.c	/^	int x_val;$/;"	m	struct:line	file:
+y_val	skyline.c	/^	int y_val;$/;"	m	struct:line	file:
