@@ -1,0 +1,51 @@
+#!/bin/bash
+#
+#Author: haiy
+#E-mail: haiyangfu512@gmail.com
+#Date: 2014年 11月 22日 星期六 14:50:29 CST
+#Note: link an yarn application's logs together.
+#       dirs in /alidata1/data/hdfs/application_log are
+#       mounted remote dirs by sshfs.
+#Usage: 
+#     1. add vlog to $PATH
+#     2. vlog applicationId
+
+if [[ $# -lt 1 ]];then
+    echo "Usage: vlog applicationId"
+    echo "Example: vlog application_1414476634821_0001"
+    exit
+fi
+
+aid=$1
+mkdir $aid && cd $aid
+
+if [[ "${PWD##*/}" != "$aid" ]];then
+    echo "Usage: vlog applicationId"
+    echo "Can't mkdir $aid !"
+    exit
+fi
+current_dir=$PWD
+
+app_log_dir=application_log
+log_dir_list=`ls $app_log_dir`
+
+cd $app_log_dir
+
+for d in $log_dir_list;
+do
+    cd $d
+    log_list=$(ls $aid)
+    echo "Find log dir :" $log_list.
+    for l in $log_list;
+    do
+        ln  -s $app_log_dir/$d/$aid/$l $current_dir/$l
+    done
+    cd ..
+done
+
+cd $current_dir
+echo "Done!"
+
+
+
+
