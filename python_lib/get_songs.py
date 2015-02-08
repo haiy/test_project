@@ -80,9 +80,20 @@ def writeSongs(infoJsonStr):
            successSize += 1
            print "Downloaded %s success! %d of %d", (songTitle, successSize, totalSize)
 
+def convert_format(inputFileName, outputFileName):
+    print "file names : ",inputFileName, outputFileName
+    ct = readFile(inputFileName)
+    start = ct.index(" ftypmp42") - 3
+    print "input size :",len(ct)
+    print "output size :",len(ct[start:])
+    if start == -1:
+        writeFile(outputFileName, ct)
+    else:
+        writeFile(outputFileName, ct[start:])
+
 if __name__ == "__main__":
-    fp = open(sys.argv[1])
-    fileContent = fp.read()
-    fp.close()
-    writeSongs(fileContent)
-    pass
+    #fp = open(sys.argv[1])
+    #fileContent = fp.read()
+    #fp.close()
+    #writeSongs(fileContent)
+    convert_format(sys.argv[1], sys.argv[2])
