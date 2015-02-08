@@ -1,0 +1,30 @@
+25525511135
+part 0 : 2 ip 2
+2. bigger 3 break
+part 0 : 25 ip 25
+part 1 : 5 ip 25.5
+25.5. bigger 3 break
+part 1 : 52 ip 25.52
+25.52. bigger 3 break
+part 0 : 255 ip 255
+part 1 : 2 ip 255.2
+255.2. bigger 3 break
+part 1 : 25 ip 255.25
+part 2 : 5 ip 255.25.5
+255.25.5. bigger 3 break
+part 2 : 51 ip 255.25.51
+255.25.51. bigger 3 break
+part 1 : 255 ip 255.255
+part 2 : 1 ip 255.255.1
+255.255.1. bigger 3 break
+part 2 : 11 ip 255.255.11
+part 3 : 1 ip 255.255.11.1
+255.255.11.1. bigger 3 break
+part 3 : 13 ip 255.255.11.13
+255.255.11.13. bigger 3 break
+part 3 : 135 ip 255.255.11.135
+part 2 : 111 ip 255.255.111
+part 3 : 3 ip 255.255.111.3
+255.255.111.3. bigger 3 break
+part 3 : 35 ip 255.255.111.35
+['255.255.11.135', '255.255.111.35']
