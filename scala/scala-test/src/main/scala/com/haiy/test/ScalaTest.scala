@@ -1,17 +1,17 @@
 package com.haiy.test
 
-import com.duozhun.zerone.IndirectMap
-import com.duozhun.zerone.utils._
-import com.duozhun.zerone.hbase.HbaseConnector
-import org.apache.spark._
-import org.apache.spark.graphx._
-import org.apache.spark.SparkContext._
-import org.apache.spark.rdd.RDD
 import java.util.ArrayList
 
-import scala.collection.mutable
-import scala.collection.JavaConverters._
+import com.duozhun.zerone.IndirectMap
+import com.duozhun.zerone.hbase.HbaseConnector
+import com.duozhun.zerone.utils._
+import org.apache.spark.SparkContext._
+import org.apache.spark._
+import org.apache.spark.graphx._
+
 import scala.collection.JavaConversions._
+import scala.collection.JavaConverters._
+import scala.collection.mutable
 
 
 object ScalaTest{
