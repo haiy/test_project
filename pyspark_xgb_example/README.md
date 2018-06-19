@@ -39,14 +39,6 @@
 │   ├── README.md
 │   ├── input
 │   └── output
-├── metastore_db
-├── spark-warehouse
-├── pyspark-demo.ipynb
-├── ispark.sh                 # 启动本地的pyspark环境  
-└── yarn_run.sh               # 将任务提交到yarn
 ```
 
-**Note**: 
-- 建议使用pyspark交互环境进行代码调试，这时候选取少量数据进行代码编写，
-然后流程代码无误后使用yarn_run.sh将任务提交到集群。
 - 在使用交互环境，文件保存csv时加上`.option("codec","none")`避免出错
